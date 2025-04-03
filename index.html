@@ -492,7 +492,7 @@
 </section>
 <!-- End of portfolio section -->
 
-<form action="https://script.google.com/macros/s/AKfycby2MoIsQzFCucAWWc0d11yKfxfUoKVVBsfjTcYsc5dhcOxYcSQBWH-K90PkFs5p7-mC/exec" method="POST">
+<form id="contactForm">
   <div class="form-group">
     <input class="form-control" type="text" name="name" placeholder="Name *" required>
   </div>
@@ -506,6 +506,40 @@
     <button type="submit" class="form-control btn btn-primary">Send Message</button>
   </div>
 </form>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault(); // prevent the default form submission
+
+  // Collect form data
+  const formData = {
+    name: this.name.value,
+    email: this.email.value,
+    message: this.message.value
+  };
+
+  // Send the data as JSON using fetch
+  fetch("https://script.google.com/macros/s/AKfycby2MoIsQzFCucAWWc0d11yKfxfUoKVVBsfjTcYsc5dhcOxYcSQBWH-K90PkFs5p7-mC/exec", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(formData)
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    alert("Message sent successfully!");
+    // Optionally, reset the form:
+    document.getElementById("contactForm").reset();
+  })
+  .catch(error => {
+    console.error("Error:", error);
+    alert("There was an error sending your message.");
+  });
+});
+</script>
+
 
 
 
