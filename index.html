@@ -492,34 +492,6 @@
 </section>
 <!-- End of portfolio section -->
 
-<!-- Your Contact Form -->
-<form id="contact-form">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required /><br /><br />
-
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required /><br /><br />
-
-  <label for="message">Message:</label><br />
-  <textarea id="message" name="message" rows="4" cols="50" required></textarea><br /><br />
-
-  <button type="submit">Submit Here</button>
-</form>
-
-<!-- A container to show the form's HTML preview -->
-<div id="form-preview" style="border: 1px solid #ccc; padding: 10px; margin-top: 20px;"></div>
-
-<script>
-  // Get the form element and the preview container
-  const form = document.getElementById("contact-form");
-  const previewDiv = document.getElementById("form-preview");
-
-  // Before sending (or on page load) print the form's HTML content into the preview container
-  previewDiv.textContent = form.outerHTML;
-
-  // Alternatively, if you want to print it in the console before sending:
-  // console.log(form.outerHTML);
-</script>
 
 
 <div class="section contact" id="contact">
@@ -585,20 +557,20 @@
     </div>
 </div>
 
-<!-- A container to show the form's HTML preview -->
-<div id="form-preview" style="border: 1px solid #ccc; padding: 10px; margin-top: 20px;"></div>
-	
-<script>
-  // Get the form element and the preview container
-  const form = document.getElementById("contact-form");
-  const previewDiv = document.getElementById("form-preview");
+<!-- Your Contact Form -->
+<form id="contact-form">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required /><br /><br />
 
-  // Before sending (or on page load) print the form's HTML content into the preview container
-  previewDiv.textContent = form.outerHTML;
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required /><br /><br />
 
-  // Alternatively, if you want to print it in the console before sending:
-  // console.log(form.outerHTML);
-</script>
+  <label for="message">Message:</label><br />
+  <textarea id="message" name="message" rows="4" cols="50" required></textarea><br /><br />
+
+  <button type="submit">Submit Here</button>
+</form>
+
 
 <script src="index.js"></script>
     <!-- core  -->
