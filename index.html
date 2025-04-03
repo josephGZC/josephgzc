@@ -506,7 +506,20 @@
   <button type="submit">Submit Here</button>
 </form>
 
+<!-- A container to show the form's HTML preview -->
+<div id="form-preview" style="border: 1px solid #ccc; padding: 10px; margin-top: 20px;"></div>
 
+<script>
+  // Get the form element and the preview container
+  const form = document.getElementById("contact-form");
+  const previewDiv = document.getElementById("form-preview");
+
+  // Before sending (or on page load) print the form's HTML content into the preview container
+  previewDiv.textContent = form.outerHTML;
+
+  // Alternatively, if you want to print it in the console before sending:
+  // console.log(form.outerHTML);
+</script>
 
 
 <div class="section contact" id="contact">
@@ -540,7 +553,7 @@
                             <i class="ti-mobile icon-md"></i>
                         </div>
                         <div class="col-10">
-                            <h6 class="d-inline">Phone : <br> <span class="text-muted">+(63)917 519 6809</span></h6>
+                            <h6 class="d-inline">Ready : <br> <span class="text-muted">+(63)917 519 6809</span></h6>
                         </div>
                     </div>
                     <div class="row mb-2">
@@ -571,6 +584,21 @@
         </div>
     </div>
 </div>
+
+<!-- A container to show the form's HTML preview -->
+<div id="form-preview" style="border: 1px solid #ccc; padding: 10px; margin-top: 20px;"></div>
+	
+<script>
+  // Get the form element and the preview container
+  const form = document.getElementById("contact-form");
+  const previewDiv = document.getElementById("form-preview");
+
+  // Before sending (or on page load) print the form's HTML content into the preview container
+  previewDiv.textContent = form.outerHTML;
+
+  // Alternatively, if you want to print it in the console before sending:
+  // console.log(form.outerHTML);
+</script>
 
 <script src="index.js"></script>
     <!-- core  -->
