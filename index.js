@@ -1,5 +1,5 @@
 // index.js or your custom script file
-const url = 'https://script.google.com/macros/s/AKfycbwEF24t1zULVfJHhTi0Lyg-49hTq2x0Ui85dz5WkxNYG0Bku_imEYRE5cAKbjiDcCWuSw/exec';
+const url = 'https://script.google.com/macros/s/AKfycby2MoIsQzFCucAWWc0d11yKfxfUoKVVBsfjTcYsc5dhcOxYcSQBWH-K90PkFs5p7-mC/exec';
 
 document.getElementById('contact-form').addEventListener('submit', function (event) {
   event.preventDefault();
